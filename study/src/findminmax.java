@@ -11,7 +11,6 @@ public class findminmax {
                 min = num[i+1];
             }
         }
-        System.out.println("Max:" + max);
-        System.out.println("Min:" + min);
+        System.out.println("Max:" + max + " Min:" + min);
     }
 }
