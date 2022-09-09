@@ -6,7 +6,7 @@ public class findmissnum {
         for (int i = num[0] ; i < num[num.length-1] + 1 ; i++){
             if (i != num[x]){
                 miss = false;
-                System.out.println(i);
+                System.out.println("The excluded number is " + i + ".");
                 break;
             }
             x++;
