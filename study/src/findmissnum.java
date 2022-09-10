@@ -1,10 +1,10 @@
 public class findmissnum {
     public static void main(String[] args){
         boolean miss = true;
-        int x = 0;
-        int[] num = {-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-        for (int i = num[0] ; i < num[num.length-1] + 1 ; i++){
-            if (i != num[x]){
+        int[] num = {255, 256, 257, 258};
+        int x = num[0];
+        for (int i = 0 ; i < num.length; i++){
+            if (x != num[i]){
                 miss = false;
                 System.out.println("The excluded number is " + i + ".");
                 break;
