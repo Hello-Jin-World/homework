@@ -1,15 +1,20 @@
 public class findmissnum {
     public static void main(String[] args){
         boolean miss = true;
-        int[] num = {-245, -244, -243, -241};
+        int[] num = {1,2,3,4,5,6};
         for (int i = 0 ; i < num.length - 1 ; i++){
-            if (num[i+1]-num[i] > 1){
+            if (num[i+1] - num[i] > 1){
                 miss = false;
                 System.out.println("The excluded number is " + (num[i]+1) + ".");
                 break;
             }
+            if (num[i] == num[i+1]){
+                miss = false;
+                System.out.println("It's the same number.");
+                break;
+            }
         }
-        if (miss == true) {
+        if (miss) {
             System.out.println("Nothing is missing.");
         }
     }

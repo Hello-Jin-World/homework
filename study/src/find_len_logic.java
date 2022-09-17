@@ -5,14 +5,13 @@ public class find_len_logic {
         int num = 0;
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        for (int i = 0 ; i < 10 ; i++){
+        for (int i = 0 ;; i++){
             if (n == 0){
-                num = i;
                 break;
             }
             n = n / 10;
             if (n == 0){
-                num = i+1;
+                num = i + 1;
                 break;
             }
         }
