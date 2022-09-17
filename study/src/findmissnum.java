@@ -1,7 +1,11 @@
 public class findmissnum {
     public static void main(String[] args){
         boolean miss = true;
-        int[] num = {9,11};
+        int[] num = {-5,-4,-3,-2,0};
+        if (num.length == 0){
+            miss = false;
+            System.out.println("Array is empty.");
+        }
         for (int i = 0 ; i < num.length - 1 ; i++){
             if (num[i] - num[i+1] < -1){
                 miss = false;
