@@ -6,10 +6,10 @@ public class pyramid {
         Scanner sc = new Scanner(System.in);
         int height = sc.nextInt();
         for (int i = 0 ; i < height ; i++){
-            for (int k = height - 1 ; k > i ; k--){
+            for (int j = height - 1 ; j > i ; j--){
                 System.out.print(" ");
             }
-            for (int j = 0 ; j < 2 * i + 1 ; j++){
+            for (int k = 0 ; k < 2 * i + 1 ; k++){
                 System.out.print("*");
             }
             System.out.println();

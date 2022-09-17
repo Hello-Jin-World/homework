@@ -8,12 +8,11 @@ public class backwards_array {
         Scanner sc_size = new Scanner(System.in);
         int size = sc_size.nextInt();
         int[] arr = new int[size];// 여기까지 배열 사이즈 입력
-        System.out.print("Enter number : ");
-        Scanner sc_num = new Scanner(System.in);
-        int num = sc_num.nextInt(); // 숫자를 배열로 받음
-        for (int i = 0 ; i < (int)Math.log10(num)+1 ; i++){
-            arr[i] = (int)((num / Math.pow(10, (int)Math.log10(num) - i)) % 10);
-        }
+        for (int i = 0 ; i < size ; i++){
+            System.out.print("Enter number : ");
+            Scanner sc_num = new Scanner(System.in);
+            arr[i] = sc_num.nextInt();
+        } // 하나씩 size 크기만큼 숫자를 받음
         System.out.print("Result : ");
         for (int i = 0 ; i < size / 2 ; i++){
             temp = arr[size - i - 1];
@@ -21,7 +20,10 @@ public class backwards_array {
             arr[i] = temp; // 거꾸로 바꿔주는 로직
         }
         for (int i : arr){
-            System.out.print(i);
+            System.out.print(i + " ");
         }
     }
 }
+/*
+* 하나씩 받기
+* */
