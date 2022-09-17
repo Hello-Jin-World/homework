@@ -1,7 +1,7 @@
 public class findmissnum {
     public static void main(String[] args){
         boolean miss = true;
-        int[] num = {-5,-4,-3,-1};
+        int[] num = {-245, -244, -243, -241};
         for (int i = 0 ; i < num.length - 1 ; i++){
             if (num[i+1]-num[i] > 1){
                 miss = false;

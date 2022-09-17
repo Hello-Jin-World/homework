@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Spliterator;
 
 public class backwards_array {
     public static void main(String[] args){
