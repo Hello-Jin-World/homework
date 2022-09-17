@@ -14,10 +14,6 @@ public class palindromicnum_int {
                 break;
             }
             num_copy = num_copy / 10;
-            if (num_copy == 0){
-                len = i+1;
-                break;
-            }
         } // 입력받은 숫자의 길이를 구함
         if (len < 2 || num < 0) {
             System.out.println("두 자리 이상 양수를 입력하시오.");
