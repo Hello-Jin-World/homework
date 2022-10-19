@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class pyramid {
     public static void main(String[] args){
-        System.out.print("높이를 입력하세요 : ");
+        System.out.print("Enter the height of the pyramid : ");
         Scanner sc = new Scanner(System.in);
         int height = sc.nextInt();
         for (int i = 0 ; i < height ; i++){
