@@ -1,14 +1,24 @@
+import java.util.Scanner;
+
 public class findminmax {
     public static void main(String[] args){
-        int[] num = {0, -132, 32, 122, -55, 87, 91, -48, 177};
-        int max = num[0];
-        int min = num[0];
-        for (int i = 0 ; i < num.length ; i++){
-            if (max < num[i]){
-                max = num[i];
+        System.out.print("Enter array size : ");
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+        for (int i = 0 ; i < size ; i++){
+            System.out.print("Enter number : ");
+            Scanner sc_num = new Scanner(System.in);
+            arr[i] = sc_num.nextInt();
+        }
+        int max = arr[0];
+        int min = arr[0];
+        for (int i = 0 ; i < arr.length ; i++){
+            if (max < arr[i]){
+                max = arr[i];
             }
-            if (min > num[i]){
-                min = num[i];
+            if (min > arr[i]){
+                min = arr[i];
             }
         }
         System.out.println("Max:" + max + " Min:" + min);

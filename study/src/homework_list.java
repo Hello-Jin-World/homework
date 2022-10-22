@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class homework_list {
     public static void main(String[] args) {
-        System.out.println("Welcome jin-world!");
+        System.out.println("Welcome-jin-world!");
         while (true) {
             System.out.println("\n0) exit program.");
             System.out.println("1) find the length of a number.");
@@ -10,7 +10,8 @@ public class homework_list {
             System.out.println("3) create symmetry tree.");
             System.out.println("4) convert upper lower.");
             System.out.println("5) check palindromic number.");
-            System.out.println("6) reverse output");
+            System.out.println("6) reverse output.");
+            System.out.println("7) find max and min.");
             System.out.print("\nSelect homework : ");
             Scanner sc = new Scanner(System.in);
             int num = sc.nextInt();
@@ -47,6 +48,11 @@ public class homework_list {
             if (num == 6) {
                 System.out.println("\nThis program prints the characters you enter backwards.");
                 backward();
+                back_main();
+            }
+            if (num == 7 ) {
+                System.out.println("\nThis program finds the minimum and maximum values among the numbers you enter.");
+                findminmaxval();
                 back_main();
             }
         }
@@ -189,6 +195,29 @@ public class homework_list {
         for (String i : arr){
             System.out.print(i + " ");
         }
+    }
+
+    public static void findminmaxval(){
+        System.out.print("\nEnter array size : ");
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+        for (int i = 0 ; i < size ; i++){
+            System.out.print("Enter number : ");
+            Scanner sc_num = new Scanner(System.in);
+            arr[i] = sc_num.nextInt();
+        }
+        int max = arr[0];
+        int min = arr[0];
+        for (int i = 0 ; i < arr.length ; i++){
+            if (max < arr[i]){
+                max = arr[i];
+            }
+            if (min > arr[i]){
+                min = arr[i];
+            }
+        }
+        System.out.println("Max:" + max + " Min:" + min);
     }
 }
 
